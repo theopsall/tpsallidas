@@ -6,16 +6,17 @@ import AboutMe from "./components/AboutMe";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import { useSelector } from "../../reducers/store";
-import "./styles.css";
 import { Screens } from "../../reducers/screens";
+import "./styles.css";
+
 
 const App = () => {
   const displayedScreen = useSelector((state) => state.displayedScreen);
+
   const renderScreen = (screen: string) => {
     switch (screen) {
       case Screens.Index:
         return <Index />;
-
       case Screens.AboutMe:
         return <AboutMe />;
       case Screens.Contact:
@@ -26,6 +27,7 @@ const App = () => {
         return <Index />;
     }
   };
+
   return (
     <div className="home-screen">
       <Header />

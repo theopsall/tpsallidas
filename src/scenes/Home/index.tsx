@@ -1,12 +1,12 @@
 import React from "react";
-import Footer from "../../components/Footer";
-import Header from "../../components/Header";
+import Footer from "components/Footer";
+import Header from "components/Header";
 import Index from "./components/Index";
 import AboutMe from "./components/AboutMe";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
-import { useSelector } from "../../reducers/store";
-import { Screens } from "../../reducers/screens";
+import { useSelector } from "reducers/store";
+import { Screens } from "reducers/screens";
 import "./styles.css";
 
 

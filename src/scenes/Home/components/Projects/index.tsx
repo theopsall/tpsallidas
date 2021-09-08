@@ -1,5 +1,5 @@
 import React from "react";
-import Title from "../../../../components/Title";
+import Title from "components/Title";
 
 const App = () => {
   return (
@@ -75,6 +75,20 @@ const App = () => {
                 </div>
               </div>
             </a>
+            {/* <!-- Project Start    --> */}
+            <a href="https://github.com/theopsall/BoVW"
+              target="_blank"
+              rel="noreferrer">
+              <div className="card">
+                <div className="card-body">
+                  <h5 className="card-title">BoVW</h5>
+                  <p className="card-text">
+                    Bag of Visual Words (BoVW):  is simple technique to represent images by using only their descriptors
+                  </p>
+                </div>
+              </div>
+            </a>
+            {/* <!--  Project END   --> */}
           </div>
         </div>
       </section>

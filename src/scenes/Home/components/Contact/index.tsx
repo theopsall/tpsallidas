@@ -1,5 +1,5 @@
 import React from "react";
-import Title from "../../../../components/Title";
+import Title from "components/Title";
 import InfoCard from "./components/InfoCard";
 
 const App = () => {

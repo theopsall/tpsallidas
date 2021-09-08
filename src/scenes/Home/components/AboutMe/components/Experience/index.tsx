@@ -4,18 +4,18 @@ const App = () => {
       <div className="heading">
         <h2 className="text-center">&nbsp;Experience</h2>
       </div>
-      {/* <div className="item">
+      <div className="item">
         <div className="row">
           <div className="col-md-6">
-            <h3>Associate Researcher</h3>
+            <h3>Research Associate</h3>
             <h4 className="organization">NSCR Demokrtios</h4>
           </div>
           <div className="col-md-6">
-            <span className="period">07/2021 - Present</span>
+            <span className="period">08/2021 - Present</span>
           </div>
         </div>
         <p className="text-muted">
-          Associate Researcher at the Multimedia Analysis Group of the
+          Research Associate at the Multimedia Analysis Group of the
           Computational Intelligence Lab ({" "}
           <a
             href="https://labs-repos.iit.demokritos.gr/MagCIL/"
@@ -24,10 +24,10 @@ const App = () => {
           >
             MagCIL
           </a>
-          ) of the the Institute of Informatics and Telecommunications , of the
+          ) of the Institute of Informatics and Telecommunications , of the
           National Center for Scientific Research "Demokritos".{" "}
         </p>
-      </div> */}
+      </div>
       <div className="item">
         <div className="row">
           <div className="col-md-6">
@@ -39,8 +39,7 @@ const App = () => {
           </div>
         </div>
         <p className="text-muted">
-          Projects Development in React, React Native, Angular and Vanilla
-          JavaScript
+          Software developer on projects using React, Angular, React Native and Vanilla JS.
         </p>
       </div>
       <div className="item">

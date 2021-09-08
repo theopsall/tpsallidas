@@ -1,7 +1,7 @@
 import React, { useMemo } from "react";
-import { Actions } from "../../../../reducers/actions";
-import { Screens } from "../../../../reducers/screens";
-import { useDispatch } from "../../../../reducers/store";
+import { Actions } from "reducers/actions";
+import { Screens } from "reducers/screens";
+import { useDispatch } from "reducers/store";
 
 const App = () => {
   const dispatch = useDispatch();

@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/tpsallidas/static/css/main.d4e88324.chunk.css",
-    "main.js": "/tpsallidas/static/js/main.7b77e000.chunk.js",
-    "main.js.map": "/tpsallidas/static/js/main.7b77e000.chunk.js.map",
+    "main.css": "/tpsallidas/static/css/main.27d80920.chunk.css",
+    "main.js": "/tpsallidas/static/js/main.30192a2c.chunk.js",
+    "main.js.map": "/tpsallidas/static/js/main.30192a2c.chunk.js.map",
     "runtime-main.js": "/tpsallidas/static/js/runtime-main.b529890a.js",
     "runtime-main.js.map": "/tpsallidas/static/js/runtime-main.b529890a.js.map",
     "static/js/2.8e7dd83b.chunk.js": "/tpsallidas/static/js/2.8e7dd83b.chunk.js",
     "static/js/2.8e7dd83b.chunk.js.map": "/tpsallidas/static/js/2.8e7dd83b.chunk.js.map",
     "index.html": "/tpsallidas/index.html",
-    "static/css/main.d4e88324.chunk.css.map": "/tpsallidas/static/css/main.d4e88324.chunk.css.map",
+    "static/css/main.27d80920.chunk.css.map": "/tpsallidas/static/css/main.27d80920.chunk.css.map",
     "static/js/2.8e7dd83b.chunk.js.LICENSE.txt": "/tpsallidas/static/js/2.8e7dd83b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.b529890a.js",
     "static/js/2.8e7dd83b.chunk.js",
-    "static/css/main.d4e88324.chunk.css",
-    "static/js/main.7b77e000.chunk.js"
+    "static/css/main.27d80920.chunk.css",
+    "static/js/main.30192a2c.chunk.js"
   ]
 }

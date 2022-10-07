@@ -1,4 +1,4 @@
-const App = () => {
+const Info = () => {
   return (
     <div className="group">
       <div className="row">
@@ -52,4 +52,4 @@ const App = () => {
     </div>
   );
 };
-export default App;
+export default Info;

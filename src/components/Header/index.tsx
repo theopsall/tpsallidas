@@ -1,21 +1,32 @@
+import BrightnessMediumIcon from "@mui/icons-material/BrightnessMedium";
+import ModeNightIcon from "@mui/icons-material/ModeNight";
+import { Button, Switch } from "antd";
 import React from "react";
-import { Actions } from "../../reducers/actions";
-import { Screens } from "../../reducers/screens";
-import { useDispatch } from "../../reducers/store";
 import Typed from "react-typed";
-
-const App = () => {
-  const dispatch = useDispatch();
-  const setDisplayedScreen = (payload: any) =>
-    dispatch({ type: Actions.SetDisplayedScreen, payload });
-
+import "./index.css";
+const Header = () => {
+  const [colorChange, setColorchange] = React.useState(false);
+  const changeNavbarColor = () => {
+    if (window.scrollY >= 1080) {
+      setColorchange(false);
+    } else {
+      setColorchange(true);
+    }
+  };
+  React.useEffect(() => {
+    window.addEventListener("scroll", changeNavbarColor);
+    return () => {
+      window.removeEventListener("scroll", changeNavbarColor);
+    };
+  }, []);
   return (
-    <nav className="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient">
+    <nav
+      className={`navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient ${
+        colorChange ? "transparent" : ""
+      }`}
+    >
       <div className="container">
-        <span
-          className="navbar-brand logo"
-          onClick={() => setDisplayedScreen(Screens.Index)}
-        >
+        <span className="navbar-brand logo">
           <Typed
             strings={["Theodoros Psallidas"]}
             typeSpeed={100}
@@ -34,33 +45,31 @@ const App = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="nav navbar-nav ml-auto">
             <li className="nav-item" role="presentation">
-              <span
-                className="nav-link"
-                onClick={() => setDisplayedScreen(Screens.AboutMe)}
-              >
-                About Me
-              </span>
+              <Button type="text" className="nav-link" href="#AboutMe">
+                AboutMe
+              </Button>
             </li>
             <li className="nav-item" role="presentation">
-              <span
-                className="nav-link"
-                onClick={() => setDisplayedScreen(Screens.Projects)}
-              >
+              <Button type="text" className="nav-link" href="#Projects">
                 Projects
-              </span>
+              </Button>
             </li>
             <li className="nav-item" role="presentation">
-              <span
-                className="nav-link"
-                onClick={() => setDisplayedScreen(Screens.Contact)}
-              >
+              <Button type="text" className="nav-link" href="#Contact">
                 Contact
-              </span>
+              </Button>
             </li>
           </ul>
+          <span>
+            <Switch
+              checkedChildren={<BrightnessMediumIcon />}
+              unCheckedChildren={<ModeNightIcon />}
+              defaultChecked
+            />
+          </span>
         </div>
       </div>
     </nav>
   );
 };
-export default App;
+export default Header;

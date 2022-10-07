@@ -1,3 +1,4 @@
 export const Actions = {
-    SetDisplayedScreen: "SetDisplayedScreen"
-}
+  SetDisplayedScreen: "SetDisplayedScreen",
+  SetRepos: "setRepos",
+};

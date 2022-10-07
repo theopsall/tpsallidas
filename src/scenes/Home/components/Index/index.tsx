@@ -1,34 +1,61 @@
-import React, { useMemo } from "react";
-import { Actions } from "../../../../reducers/actions";
-import { Screens } from "../../../../reducers/screens";
-import { useDispatch } from "../../../../reducers/store";
-
+import {
+  GithubOutlined,
+  LinkedinFilled,
+  TwitterOutlined,
+} from "@ant-design/icons";
+import { Button } from "antd";
+import Avatar from "antd/lib/avatar/avatar";
+import landingPage from "assets/images/landing-page.jpg";
+import React from "react";
+import "./index.css";
 const App = () => {
-  const dispatch = useDispatch();
-  const setDisplayedScreen = (payload: any) =>
-    dispatch({ type: Actions.SetDisplayedScreen, payload });
-
-  const avatar = useMemo(() => <div className="avatar"></div>, []);
-
-
   return (
-    <main className="page lanidng-page">
+    <main className="page landing-page">
+      <img className="background-img" src={landingPage} alt="" />
       <section className="portfolio-block block-intro">
         <div className="container">
-          {avatar}
           <div className="about-me">
-            <p>
-              I am currently a Ph.D. candidate student. I hold an MSc in Data
-              Science and a BSc in Computer Science. I also work as a software
-              developer and research associate.
-            </p>
+            <Avatar
+              className="avatar"
+              src="https://avatars.githubusercontent.com/theopsall"
+              size={"large"}
+            />
 
-            <span
-              className="btn btn-outline-primary"
-              onClick={() => setDisplayedScreen(Screens.AboutMe)}
-            >
-              About me
-            </span>
+            <p>
+              I am currently a Ph.D. candidate at the University of Thessaly.
+              Additionally, I hold a BSc in computer science from the University
+              of Thessaly and MSc in Data Science from the University of
+              Peloponnese and the National Centre for Scientific Research
+              “Demokritos”. I also work as a Lead Software Developer and
+              research associate.
+            </p>
+            <div className="social-media">
+              <Button
+                type="text"
+                href="https://github.com/theopsall"
+                target="_blank"
+                icon={<GithubOutlined />}
+                size="large"
+              />
+              <Button
+                type="text"
+                href="https://twitter.com/TheoPsallidas"
+                target="_blank"
+                icon={<TwitterOutlined />}
+                size="large"
+              />
+
+              <Button
+                type="text"
+                href="https://twitter.com/TheoPsallidas"
+                target="_blank"
+                icon={<LinkedinFilled />}
+                size="large"
+              />
+            </div>
+            <Button type="text" href="#Projects">
+              <span className="btn btn-outline-primary">Projects</span>
+            </Button>
           </div>
         </div>
       </section>

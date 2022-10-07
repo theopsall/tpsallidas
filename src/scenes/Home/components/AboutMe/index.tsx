@@ -7,7 +7,7 @@ import "./styles.css";
 
 const App = () => {
   return (
-    <main className="page cv-page">
+    <main className="page cv-page" id="AboutMe">
       <section className="portfolio-block cv">
         <Experience />
         <Education />

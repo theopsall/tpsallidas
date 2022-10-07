@@ -1,0 +1,55 @@
+.landing-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+
+}
+
+.landing-page .background-img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    resize-mode: cover;
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+
+}
+
+.about-me {
+    padding: 15px;
+    border-radius: 15px;
+    background-color: rgba(140, 140, 140, .4);
+    color: white;
+    box-shadow: rgba(255, 255, 255, 0.24) 0px 3px 8px;
+
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3vh;
+}
+
+.social-media a {
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+
+.social-media svg:hover {
+    /* background-color: #ddd; */
+    color: black;
+}
+
+.social-media svg {
+    color: white;
+    font-size: 2rem;
+}

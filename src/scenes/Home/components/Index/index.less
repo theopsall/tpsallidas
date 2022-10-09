@@ -5,23 +5,20 @@
     justify-content: center;
     width: 100%;
     height: 100vh;
-
-}
-
-.main-card .background-img {
     background-size: cover;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: -1;
-    // resize-mode: cover;
-    // filter: blur(4px);
-    // -webkit-filter: blur(4px);
 
 }
+
+// .main-card .background-img {
+//     background-size: cover;
+//     position: absolute;
+//     height: 100%;
+//     width: 100%;
+//     top: 75px;
+//     left: 0;
+//     right: 0;
+//     z-index: -1;
+// }
 
 .main-card .portfolio {
     display: flex;
@@ -37,16 +34,26 @@
 
 }
 
-.main-card .portfolio .avatar {
+.main-card .portfolio .border-avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 155px;
+    height: 155px;
+    border-radius: 100px;
+    margin-bottom: 30px;
+    background: rgb(41,128,185);
+    background: linear-gradient(90deg, rgba(41,128,185,1) 0%, rgba(109,213,250,1) 50%, rgba(255,255,255,1) 100%);
+}
+
+.main-card .portfolio .border-avatar .avatar {
     width: 150px;
     height: 150px;
     background-size: cover;
     background-repeat: no-repeat;
     margin: auto;
     border-radius: 100px;
-    margin-bottom: 30px;
-    border-color: orange;
-    border-style: solid;
+
 }
 
 .main-card .portfolio p {
@@ -57,14 +64,30 @@
     text-align: center;
 }
 
-.main-card  .social-media {
+@media (max-width: 576px) {
+    .main-card .portfolio .border-avatar {
+        width: 75px;
+        height: 75px;
+    }
+
+    .main-card .portfolio .border-avatar .avatar {
+        width: 70px;
+        height: 70px;
+    }
+
+    .main-card .portfolio p {
+        font-size: 1em;
+    }
+}
+
+.main-card .social-media {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 3vh;
 }
 
-.main-card  .social-media a {
+.main-card .social-media a {
     margin-left: 1vw;
     margin-right: 1vw;
 }
@@ -75,12 +98,12 @@
     color: orange;
 }
 
-.main-card  .social-media svg {
+.main-card .social-media svg {
     color: white;
     font-size: 2rem;
 }
 
-.main-card .projects-btn{
+.main-card .projects-btn {
     font-size: 1rem;
     font-weight: 500;
 }

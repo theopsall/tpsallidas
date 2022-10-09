@@ -10,14 +10,18 @@ import "./index.less";
 
 const App = () => {
   return (
-    <div className="main-card">
-      <img className="background-img" src={landingPage} alt="" />
+    <div className="main-card" style={{ 
+      backgroundImage: `url(${landingPage})` 
+    }}
+    id="start">
       <div className="portfolio">
+        <div className="border-avatar">
         <Avatar
           className="avatar"
           src="https://avatars.githubusercontent.com/theopsall"
           size={"large"} 
           alt="Theo Psallidas avatar"/>
+        </div>
         <p>
           I am currently a Ph.D. candidate at the University of Thessaly.
           Additionally, I hold a BSc in computer science from the University

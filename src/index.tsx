@@ -1,11 +1,11 @@
+import "antd/dist/antd.css";
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
-import App from "./App";
 import { Provider } from "react-redux";
-import reducers from "./reducers/reducers";
 import { createStore } from "redux";
-import "antd/dist/antd.css";
+import App from "./App";
+import "./index.less";
+import reducers from "./reducers/reducers";
 const store = createStore(reducers);
 
 ReactDOM.render(

@@ -2,7 +2,7 @@ import { useLayoutEffect } from "react";
 import { Actions } from "reducers/actions";
 import { useDispatch } from "reducers/store";
 import GithubService from "services/GithubService";
-import "./App.css";
+import "./App.less";
 import Home from "./scenes/Home";
 
 const App = () => {

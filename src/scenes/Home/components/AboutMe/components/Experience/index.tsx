@@ -1,26 +1,14 @@
+import Position from "components/Position";
 import React from "react";
 import experience from "./data";
-
+import './index.less';
 const Experience = () => {
   return (
-    <div className="work-experience group">
-      <div className="heading">
-        <h2 className="text-center">Experience</h2>
-      </div>
+    <div className="experience-wrapper">
+        <h2 >Experience</h2>
       {experience.map((item, index: number) => {
         return (
-          <div className="item" key={index}>
-            <div className="row">
-              <div className="col-md-6">
-                <h3>{item.title}</h3>
-                <h4 className="organization">{item.organization}</h4>
-              </div>
-              <div className="col-md-6">
-                <span className="period">{item.date}</span>
-              </div>
-            </div>
-            {item.description}
-          </div>
+          <Position  key={index} title={item.title} organization={item.organization} date={item.date} description={item.description}/>
         );
       })}
     </div>

@@ -1,16 +1,17 @@
-import BrightnessMediumIcon from "@mui/icons-material/BrightnessMedium";
-import ModeNightIcon from "@mui/icons-material/ModeNight";
-import { Button, Switch } from "antd";
+import { Button } from "antd";
 import React from "react";
 import Typed from "react-typed";
-import "./index.css";
+import './index.less';
+
+
+import "./index.less";
 const Header = () => {
   const [colorChange, setColorchange] = React.useState(false);
   const changeNavbarColor = () => {
-    if (window.scrollY >= 1080) {
-      setColorchange(false);
-    } else {
+    if (window.scrollY >= window.outerHeight) {
       setColorchange(true);
+    } else {
+      setColorchange(false);
     }
   };
   React.useEffect(() => {
@@ -21,12 +22,10 @@ const Header = () => {
   }, []);
   return (
     <nav
-      className={`navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient ${
-        colorChange ? "transparent" : ""
-      }`}
+      className={`navbar ${colorChange ? "gray" : ""
+        }`}
     >
-      <div className="container">
-        <span className="navbar-brand logo">
+        <span className="navbar-brand">
           <Typed
             strings={["Theodoros Psallidas"]}
             typeSpeed={100}
@@ -34,41 +33,17 @@ const Header = () => {
             loop
           />
         </span>
-        <button
-          data-toggle="collapse"
-          className="navbar-toggler"
-          data-target="#navbarNav"
-        >
-          <span className="sr-only">Toggle navigation</span>
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="nav navbar-nav ml-auto">
-            <li className="nav-item" role="presentation">
-              <Button type="text" className="nav-link" href="#AboutMe">
-                AboutMe
-              </Button>
-            </li>
-            <li className="nav-item" role="presentation">
-              <Button type="text" className="nav-link" href="#Projects">
-                Projects
-              </Button>
-            </li>
-            <li className="nav-item" role="presentation">
-              <Button type="text" className="nav-link" href="#Contact">
-                Contact
-              </Button>
-            </li>
-          </ul>
-          <span>
-            <Switch
-              checkedChildren={<BrightnessMediumIcon />}
-              unCheckedChildren={<ModeNightIcon />}
-              defaultChecked
-            />
-          </span>
+        <div className="navbar-links">
+        <Button type="text" className="nav-link" href="#AboutMe">
+            About Me
+          </Button>
+          <Button type="text" className="nav-link" href="#Projects">
+            Projects
+          </Button>
+          <Button type="text" className="nav-link" href="#Contact">
+            Contact
+          </Button>
         </div>
-      </div>
     </nav>
   );
 };

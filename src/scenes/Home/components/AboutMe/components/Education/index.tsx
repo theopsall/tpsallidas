@@ -1,25 +1,15 @@
-import React from "react";
+import Student from "components/Student";
 import education from "./data";
+import './index.less';
 const Education = () => {
   return (
-    <div className="education group">
-      <div className="heading">
-        <h2 className="text-center">Education</h2>
-      </div>
+    <div className="education-wrapper">
+
+        <h2>Education</h2>
+
       {education.map((item, index: number) => {
         return (
-          <div className="item" key={index}>
-            <div className="row">
-              <div className="col-md-6">
-                <h3>{item.title}</h3>
-                <h4 className="organization">{item.organization}</h4>
-              </div>
-              <div className="col-6">
-                <span className="period">{item.date}</span>
-              </div>
-            </div>
-            {item.thesis}
-          </div>
+          <Student key={index} title={item.title} organization={item.organization} date={item.date} thesis={item.thesis} />
         );
       })}
     </div>

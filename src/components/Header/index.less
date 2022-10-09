@@ -1,0 +1,47 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: transparent;
+    height: 75px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-shadow: rgba(255, 255, 255, 0.15) 0px 5px 15px;
+}
+
+.gray {
+    background-color: rgb(110, 110, 110) !important;
+}
+
+.navbar .navbar-brand {
+    font-size: 2rem;
+    color: white;
+    font-weight: 400;
+}
+
+.navbar .navbar-links .nav-link {
+
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    ;
+
+    &:hover {
+        color: orange;
+        background-color: rgba(255, 255, 255, 0.15);
+    }
+}
+
+
+@media (max-width: 576px) {
+    .navbar-links {
+        display: none;
+    }
+}

@@ -1,20 +1,15 @@
-import React from "react";
-import Info from "./components/Info";
+import Certifications from "./components/Certifications";
 import Education from "./components/Education";
 import Experience from "./components/Experience";
-import Certifications from "./components/Certifications";
-import "./styles.css";
+import "./index.less";
 
-const App = () => {
+const AboutMe = () => {
   return (
-    <main className="page cv-page">
-      <section className="portfolio-block cv">
-        <Experience />
-        <Education />
-        <Certifications />
-        <Info />
-      </section>
-    </main>
+    <div className="resume-wrapper" id="AboutMe">
+      <Experience />
+      <Education />
+      <Certifications />
+    </div>
   );
 };
-export default App;
+export default AboutMe;

@@ -1,98 +1,27 @@
-import React from "react";
-import Title from "components/Title";
-
+import Project from "components/Project";
+import { useSelector } from "reducers/store";
+import './index.less';
 const App = () => {
+  const repositories = useSelector((state) => state.repos);
+
   return (
-    <main className="page lanidng-page">
-      <section className="portfolio-block block-intro">
-        <div className="container">
-          <Title title="Projects" />
-          <div className="card-columns">
-            {/* <!-- Project Start    --> */}
-            <a
-              href="https://github.com/theopsall/Video-Summarization"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <div className="card">
-                <div className="card-body">
-                  <h5 className="card-title">Video Summarization</h5>
-                  <p className="card-text">
-                    Multimodal summarization of user-generated videos from
-                    wearable cameras
-                  </p>
-                </div>
-              </div>
-            </a>
-            {/* <!--  Project END   --> */}
-            {/* <!-- Project Start    --> */}
-            <a
-              href="https://github.com/theopsall/video_annotator"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <div className="card">
-                <div className="card-body">
-                  <h5 className="card-title">Video Annotator Web App Tool</h5>
-                  <p className="card-text">
-                    Video Annotator app is a simple and easy to use tool, that
-                    helps you to serve videos to annotators in random order.
-                    Video Annotator Tool is written in flask
-                  </p>
-                </div>
-              </div>
-            </a>
-            {/* <!--  Project END   --> */}
-            {/* <!-- Project Start    --> */}
-            <a
-              href="https://github.com/theopsall/multiSmote"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <div className="card">
-                <div className="card-body">
-                  <h5 className="card-title">MultiSMOTE</h5>
-                  <p className="card-text">
-                    A multi-label approach for SMOTE algorithm
-                  </p>
-                </div>
-              </div>
-            </a>
-            {/* <!--  Project END   --> */}
-            {/* <!-- Project Start    --> */}
-            <a
-              href="https://github.com/theopsall/archeo"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <div className="card">
-                <div className="card-body">
-                  <h5 className="card-title">Archeo</h5>
-                  <p className="card-text">
-                    ARCHEO: a python lib for sound event detection in areas of
-                    touristic Interest
-                  </p>
-                </div>
-              </div>
-            </a>
-            {/* <!-- Project Start    --> */}
-            <a href="https://github.com/theopsall/BoVW"
-              target="_blank"
-              rel="noreferrer">
-              <div className="card">
-                <div className="card-body">
-                  <h5 className="card-title">BoVW</h5>
-                  <p className="card-text">
-                    Bag of Visual Words (BoVW):  is simple technique to represent images by using only their descriptors
-                  </p>
-                </div>
-              </div>
-            </a>
-            {/* <!--  Project END   --> */}
-          </div>
+    <div className="projects-wrapper" id="Projects">
+      <div className="container">
+        <h2>Projects</h2>
+        <div className="wrapper">
+          {repositories.map((repo) => (
+            <Project
+              key={repo.id}
+              title={repo.name}
+              description={repo.description}
+              link={repo.html_url}
+            />
+          ))}
         </div>
-      </section>
-    </main>
+
+      </div>
+
+    </div>
   );
 };
 export default App;

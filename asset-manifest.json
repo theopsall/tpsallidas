@@ -1,20 +1,19 @@
 {
   "files": {
-    "main.css": "/tpsallidas/static/css/main.27d80920.chunk.css",
-    "main.js": "/tpsallidas/static/js/main.30192a2c.chunk.js",
-    "main.js.map": "/tpsallidas/static/js/main.30192a2c.chunk.js.map",
-    "runtime-main.js": "/tpsallidas/static/js/runtime-main.b529890a.js",
-    "runtime-main.js.map": "/tpsallidas/static/js/runtime-main.b529890a.js.map",
-    "static/js/2.8e7dd83b.chunk.js": "/tpsallidas/static/js/2.8e7dd83b.chunk.js",
-    "static/js/2.8e7dd83b.chunk.js.map": "/tpsallidas/static/js/2.8e7dd83b.chunk.js.map",
+    "main.css": "/tpsallidas/static/css/main.4f26f0a0.chunk.css",
+    "main.js": "/tpsallidas/static/js/main.412eec71.chunk.js",
+    "runtime-main.js": "/tpsallidas/static/js/runtime-main.95d864bc.js",
+    "static/css/2.ee705b83.chunk.css": "/tpsallidas/static/css/2.ee705b83.chunk.css",
+    "static/js/2.be04365f.chunk.js": "/tpsallidas/static/js/2.be04365f.chunk.js",
     "index.html": "/tpsallidas/index.html",
-    "static/css/main.27d80920.chunk.css.map": "/tpsallidas/static/css/main.27d80920.chunk.css.map",
-    "static/js/2.8e7dd83b.chunk.js.LICENSE.txt": "/tpsallidas/static/js/2.8e7dd83b.chunk.js.LICENSE.txt"
+    "static/js/2.be04365f.chunk.js.LICENSE.txt": "/tpsallidas/static/js/2.be04365f.chunk.js.LICENSE.txt",
+    "static/media/landing-page.4a6d085a.jpg": "/tpsallidas/static/media/landing-page.4a6d085a.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.b529890a.js",
-    "static/js/2.8e7dd83b.chunk.js",
-    "static/css/main.27d80920.chunk.css",
-    "static/js/main.30192a2c.chunk.js"
+    "static/js/runtime-main.95d864bc.js",
+    "static/css/2.ee705b83.chunk.css",
+    "static/js/2.be04365f.chunk.js",
+    "static/css/main.4f26f0a0.chunk.css",
+    "static/js/main.412eec71.chunk.js"
   ]
 }

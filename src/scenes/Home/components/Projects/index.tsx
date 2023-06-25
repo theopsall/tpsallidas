@@ -1,6 +1,6 @@
-import Project from "components/Project";
-import { useSelector } from "reducers/store";
-import './index.css';
+import Project from "../../../../components/Project";
+import { useSelector } from "../../../../reducers/store";
+import "./index.css";
 const App = () => {
   const repositories = useSelector((state) => state.repos);
 
@@ -18,9 +18,7 @@ const App = () => {
             />
           ))}
         </div>
-
       </div>
-
     </div>
   );
 };

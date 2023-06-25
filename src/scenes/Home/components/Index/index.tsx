@@ -5,32 +5,43 @@ import {
 } from "@ant-design/icons";
 import { Button } from "antd";
 import Avatar from "antd/lib/avatar/avatar";
-import landingPage from "assets/images/landing-page.jpg";
+import { SiGooglescholar } from "react-icons/si";
+import landingPage from "../../../../assets/images/landing-page.jpg";
 import "./index.css";
 
 const App = () => {
   return (
-    <div className="main-card" style={{ 
-      backgroundImage: `url(${landingPage})` 
-    }}
-    id="start">
+    <div
+      className="main-card"
+      style={{
+        backgroundImage: `url(${landingPage})`,
+      }}
+      id="start"
+    >
       <div className="portfolio">
         <div className="border-avatar">
-        <Avatar
-          className="avatar"
-          src="https://avatars.githubusercontent.com/theopsall"
-          size={"large"} 
-          alt="Theo Psallidas avatar"/>
+          <Avatar
+            className="avatar"
+            src="https://avatars.githubusercontent.com/theopsall"
+            size={"large"}
+            alt="Theo Psallidas avatar"
+          />
         </div>
         <p>
           I am currently a Ph.D. candidate at the University of Thessaly.
-          Additionally, I hold a BSc in computer science from the University
-          of Thessaly and MSc in Data Science from the University of
-          Peloponnese and the National Centre for Scientific Research
-          “Demokritos”. I also work as a Software Developer and
-          Research Associate.
+          Additionally, I hold a BSc in computer science from the University of
+          Thessaly and MSc in Data Science from the University of Peloponnese
+          and the National Centre for Scientific Research “Demokritos”. I also
+          work as a Software Developer and Research Associate.
         </p>
         <div className="social-media">
+          <Button
+            type="text"
+            href="https://scholar.google.com/citations?user=478yYkIAAAAJ&hl=el"
+            target="_blank"
+            icon={<SiGooglescholar />}
+            size="large"
+          />
           <Button
             type="text"
             href="https://github.com/theopsall"
@@ -40,24 +51,27 @@ const App = () => {
           />
           <Button
             type="text"
+            href="https://www.linkedin.com/in/tpsallidas/"
+            target="_blank"
+            icon={<LinkedinFilled />}
+            size="large"
+          />
+          <Button
+            type="text"
             href="https://twitter.com/TheoPsallidas"
             target="_blank"
             icon={<TwitterOutlined />}
             size="large"
           />
-
-          <Button
-            type="text"
-            href="https://twitter.com/TheoPsallidas"
-            target="_blank"
-            icon={<LinkedinFilled />}
-            size="large"
-          />
         </div>
-        <Button type="primary" href="#Projects" shape="round" className="projects-btn">
+        <Button
+          type="primary"
+          href="#Projects"
+          shape="round"
+          className="projects-btn"
+        >
           <span className="btn btn-outline-primary">Projects</span>
         </Button>
-
       </div>
     </div>
   );

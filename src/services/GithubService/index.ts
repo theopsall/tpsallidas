@@ -1,4 +1,4 @@
-import http from "services/http";
+import http from "../http";
 import { GithubModel } from "./dtos/GithubModel";
 
 class GithubService {

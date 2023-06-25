@@ -1,9 +1,10 @@
+import { useEffect } from "react";
 import { useLayoutEffect } from "react";
-import { Actions } from "reducers/actions";
-import { useDispatch } from "reducers/store";
-import GithubService from "services/GithubService";
 import "./App.css";
+import { Actions } from "./reducers/actions";
+import { useDispatch } from "./reducers/store";
 import Home from "./scenes/Home";
+import GithubService from "./services/GithubService";
 
 const App = () => {
   const dispatch = useDispatch();
@@ -23,6 +24,12 @@ const App = () => {
       setRepos(nonForkedRepositories);
     });
   });
+
+  useEffect(()=>{
+    window.addEventListener('scroll', ()=>{
+      console.log('scrolling');
+    })
+  },[]);
 
   return <Home />;
 };

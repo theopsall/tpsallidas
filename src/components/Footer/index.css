@@ -23,7 +23,7 @@
 }
 
 .page-footer svg {
-    font-size: 2rem;
+    font-size: 1.5rem !important;
 }
 
 .page-footer a:hover {

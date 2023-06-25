@@ -1,10 +1,18 @@
 import { Button } from "antd";
-import signature from "assets/images/signature_white.svg";
-import React, { useEffect } from "react";
+import signature from "../../assets/images/signature_white.svg";
+import React from "react";
 import "./index.css";
+import { useEffect } from "react";
 
 const Header: React.FC = () => {
-
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      console.log(window.scrollY);
+      
+      const header = document.querySelector(".navbar");
+      header?.classList.toggle("sticky", window.scrollY > 0);
+    });
+  }, []);
   return (
     <nav className="navbar">
       <a className="navbar-brand" href="#start">

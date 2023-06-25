@@ -5,7 +5,7 @@ import {
   TwitterOutlined,
 } from "@ant-design/icons";
 import React from "react";
-import "./index.less";
+import "./index.css";
 
 const App = () => {
   return (

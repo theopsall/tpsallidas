@@ -9,17 +9,6 @@
 
 }
 
-// .main-card .background-img {
-//     background-size: cover;
-//     position: absolute;
-//     height: 100%;
-//     width: 100%;
-//     top: 75px;
-//     left: 0;
-//     right: 0;
-//     z-index: -1;
-// }
-
 .main-card .portfolio {
     display: flex;
     flex-direction: column;

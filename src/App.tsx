@@ -2,7 +2,7 @@ import { useLayoutEffect } from "react";
 import { Actions } from "reducers/actions";
 import { useDispatch } from "reducers/store";
 import GithubService from "services/GithubService";
-import "./App.less";
+import "./App.css";
 import Home from "./scenes/Home";
 
 const App = () => {
@@ -12,9 +12,17 @@ const App = () => {
 
   useLayoutEffect(() => {
     GithubService.getRepositories("theopsall").then((repositories) => {
-      setRepos(repositories);
+      const nonForkedRepositories = repositories.filter(
+        (repository) => !repository.fork
+      );
+      nonForkedRepositories.sort((a, b) => {
+        return (
+          new Date(b.updated_at).getTime() - new Date(a.updated_at).getTime()
+        );
+      });
+      setRepos(nonForkedRepositories);
     });
-  }, []);
+  });
 
   return <Home />;
 };

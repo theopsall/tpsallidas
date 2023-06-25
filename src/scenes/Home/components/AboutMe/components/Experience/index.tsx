@@ -1,7 +1,7 @@
 import Position from "components/Position";
 import React from "react";
 import experience from "./data";
-import './index.less';
+import './index.css';
 const Experience = () => {
   return (
     <div className="experience-wrapper">

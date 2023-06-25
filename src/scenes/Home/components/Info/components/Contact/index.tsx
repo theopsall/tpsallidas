@@ -1,4 +1,4 @@
-import './index.less';
+import './index.css';
 const Contact = () => {
   return (
     <div className="contact-wrapper">

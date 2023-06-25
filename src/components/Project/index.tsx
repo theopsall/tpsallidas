@@ -1,4 +1,4 @@
-import './index.less';
+import './index.css';
 interface IProjectProps {
   title: string;
   description: string;

@@ -1,4 +1,4 @@
-import './index.less';
+import './index.css';
 const Skills = () => {
   return (
     <div className="skills-wrapper">

@@ -1,7 +1,7 @@
 import Certifications from "./components/Certifications";
 import Education from "./components/Education";
 import Experience from "./components/Experience";
-import "./index.less";
+import "./index.css";
 
 const AboutMe = () => {
   return (

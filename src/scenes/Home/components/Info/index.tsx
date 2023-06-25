@@ -1,14 +1,11 @@
-import React from "react";
-import Contact from "./components/Contact";
 import Skills from "./components/Skills";
-import './index.less';
+import "./index.css";
 const App = () => {
   return (
     <div className="info-page" id="Contact">
       <div className="info-wrapper">
         <Skills />
-        {/* <Contact /> */}
-        </div>
+      </div>
     </div>
   );
 };

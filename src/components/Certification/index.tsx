@@ -1,6 +1,6 @@
 import  Divider  from 'antd/lib/divider';
 import Tag from 'antd/lib/tag';
-import './index.less';
+import './index.css';
 interface ICertificationProps {
   title: string;
   organization: string;

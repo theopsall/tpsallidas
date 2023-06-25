@@ -1,6 +1,6 @@
 import  Divider  from 'antd/lib/divider';
 import Tag from 'antd/lib/tag';import React from "react";
-import './index.less';
+import './index.css';
 interface IStudentProps {
   title: string;
   organization: string;

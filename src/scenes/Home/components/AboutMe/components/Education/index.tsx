@@ -1,6 +1,6 @@
 import Student from "components/Student";
 import education from "./data";
-import './index.less';
+import './index.css';
 const Education = () => {
   return (
     <div className="education-wrapper">

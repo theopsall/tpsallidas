@@ -6,7 +6,7 @@ import {
 import { Button } from "antd";
 import Avatar from "antd/lib/avatar/avatar";
 import landingPage from "assets/images/landing-page.jpg";
-import "./index.less";
+import "./index.css";
 
 const App = () => {
   return (

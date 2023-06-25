@@ -1,34 +1,28 @@
 import { Button } from "antd";
-import React from "react";
-import Typed from "react-typed";
-import './index.less';
+import signature from "assets/images/signature_white.svg";
+import React, { useEffect } from "react";
+import "./index.css";
 
+const Header: React.FC = () => {
 
-import "./index.less";
-const Header = () => {
   return (
-    <nav
-      className="navbar" >
-        <a className="navbar-brand" href="#start">
-          <Typed
-            strings={["Theodoros Psallidas"]}
-            typeSpeed={100}
-            backSpeed={60}
-            loop
-          />
-        </a>
-        <div className="navbar-links">
+    <nav className="navbar">
+      <a className="navbar-brand" href="#start">
+        <img src={signature} alt="Theo Psallidas" className="signature" />
+      </a>
+      <div className="navbar-links">
         <Button type="text" className="nav-link" href="#AboutMe">
-            About Me
-          </Button>
-          <Button type="text" className="nav-link" href="#Projects">
-            Projects
-          </Button>
-          <Button type="text" className="nav-link" href="#Contact">
-            Contact
-          </Button>
-        </div>
+          About Me
+        </Button>
+        <Button type="text" className="nav-link" href="#Projects">
+          Projects
+        </Button>
+        <Button type="text" className="nav-link" href="#Contact">
+          Contact
+        </Button>
+      </div>
     </nav>
   );
 };
+
 export default Header;

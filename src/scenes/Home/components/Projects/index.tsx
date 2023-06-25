@@ -1,6 +1,6 @@
 import Project from "components/Project";
 import { useSelector } from "reducers/store";
-import './index.less';
+import './index.css';
 const App = () => {
   const repositories = useSelector((state) => state.repos);
 

@@ -1,5 +1,30 @@
 const experience = [
   {
+    title: "Research Associate",
+    organization: "NSCR Demokrtios",
+    location: "Athens, Greece",
+    date: "12/2023 - Present",
+    description: (
+      <p className="text-muted">
+        Research Associate at the Multimedia Analysis Group of the Computational
+        Intelligence Lab (
+        <a
+          href="https://labs-repos.iit.demokritos.gr/MagCIL/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          MagCIL
+        </a>
+        ) of the Institute of Informatics and Telecommunications , of the
+        National Center for Scientific Research{" "}
+        <a href="https://www.demokritos.gr" target="_blank" rel="noreferrer">
+          "Demokritos"
+        </a>
+        .
+      </p>
+    ),
+  },
+  {
     title: "Software Developer",
     organization: "Optechain",
     location: "Athens, Greece",
@@ -25,10 +50,13 @@ const experience = [
         >
           Enorasi Project
         </a>{" "}
-        as Research Associate at the Multimedia Analysis Group of the
-        Computational Intelligence Lab "MagCIL" of the Institute of Informatics
-        and Telecommunications , of the National Center for Scientific Research
-        "Demokritos".
+        as Research Associate at the Computetional Intelligence Laboratory of
+        the Institute of Informatics and Telecommunications , of the National
+        Center for Scientific Research{" "}
+        <a href="https://www.demokritos.gr" target="_blank" rel="noreferrer">
+          "Demokritos"
+        </a>
+        .
       </p>
     ),
   },
@@ -39,17 +67,20 @@ const experience = [
     date: "12/2019 - 01/2021",
     description: (
       <p className="text-muted">
-        Research Associate at the Multimedia Analysis Group of the Computational
-        Intelligence Lab (
+        Research Associate at the Computetional Intelligence Laboratory (
         <a
-          href="https://labs-repos.iit.demokritos.gr/MagCIL/"
+          href="https://www.iit.demokritos.gr/el/labs/cil"
           target="_blank"
           rel="noreferrer"
         >
-          MagCIL
+          CIL
         </a>
         ) of the Institute of Informatics and Telecommunications , of the
-        National Center for Scientific Research "Demokritos".
+        National Center for Scientific Research{" "}
+        <a href="https://www.demokritos.gr" target="_blank" rel="noreferrer">
+          "Demokritos"
+        </a>
+        .
       </p>
     ),
   },

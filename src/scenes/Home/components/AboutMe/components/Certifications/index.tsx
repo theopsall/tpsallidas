@@ -1,6 +1,6 @@
 import Certification from "components/Certification";
 import certifications from "./data";
-import './index.less';
+import './index.css';
 const Certifications = () => {
   return (
     <div className="certifications-wrapper">

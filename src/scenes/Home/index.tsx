@@ -1,10 +1,10 @@
 import Footer from "components/Footer";
 import Header from "components/Header";
 import AboutMe from "./components/AboutMe";
-import Info from "./components/Info";
 import Index from "./components/Index";
+import Info from "./components/Info";
 import Projects from "./components/Projects";
-import "./index.less";
+import "./index.css";
 
 const Home = () => {
   return (
@@ -13,7 +13,7 @@ const Home = () => {
       <Index />
       <AboutMe />
       <Projects />
-      <Info/>
+      <Info />
       <Footer />
     </div>
   );

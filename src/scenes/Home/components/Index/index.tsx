@@ -1,7 +1,7 @@
 import {
   GithubOutlined,
   LinkedinFilled,
-  TwitterOutlined
+  TwitterOutlined,
 } from "@ant-design/icons";
 import { Button } from "antd";
 import Avatar from "antd/lib/avatar/avatar";
@@ -23,16 +23,17 @@ const App = () => {
           <Avatar
             className="avatar"
             src="https://avatars.githubusercontent.com/theopsall"
-            size={"large"}
+            size="large"
             alt="Theo Psallidas avatar"
           />
         </div>
         <p>
-          I am currently a Ph.D. candidate at the University of Thessaly.
-          Additionally, I hold a BSc in computer science from the University of
-          Thessaly and MSc in Data Science from the University of Peloponnese
-          and the National Centre for Scientific Research “Demokritos”. I also
-          work as a Software Developer and Research Associate.
+          Currently immersed in my Ph.D. journey at the University of Thessaly,
+          I boast a rich academic background with a BSc in Computer Science and
+          an MSc in Data Science, earned through a collaboration between the
+          University of Peloponnese and the National Centre for Scientific
+          Research “Demokritos”. My passion for technology also finds an outlet
+          in my roles as a Software Developer and Research Associate.
         </p>
         <div className="social-media">
           <Button
@@ -70,7 +71,7 @@ const App = () => {
           shape="round"
           className="projects-btn"
         >
-          <span className="btn btn-outline-primary">Projects</span>
+          Projects
         </Button>
       </div>
     </div>

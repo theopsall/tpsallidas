@@ -4,7 +4,7 @@
   left: 0;
   right: 0;
   z-index: 100;
-  background-color: gray;
+  background-color: transparent;
   height: 75px;
   display: flex;
   flex-direction: row;
@@ -12,6 +12,9 @@
   justify-content: space-between;
   padding-left: 5%;
   padding-right: 5%;
+}
+.navbar.scrolled{
+  background-color: gray;
 }
 
 .navbar .signature {

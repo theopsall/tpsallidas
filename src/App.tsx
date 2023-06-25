@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { useLayoutEffect } from "react";
 import "./App.css";
 import { Actions } from "./reducers/actions";
@@ -24,12 +23,6 @@ const App = () => {
       setRepos(nonForkedRepositories);
     });
   });
-
-  useEffect(()=>{
-    window.addEventListener('scroll', ()=>{
-      console.log('scrolling');
-    })
-  },[]);
 
   return <Home />;
 };

@@ -1,20 +1,16 @@
 import { Button } from "antd";
-import signature from "../../assets/images/signature_white.svg";
 import React from "react";
+import signature from "../../assets/images/signature_white.svg";
+import { useHeaderScroll } from "./hooks/useHeaderScroll";
 import "./index.css";
-import { useEffect } from "react";
 
 const Header: React.FC = () => {
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      console.log(window.scrollY);
-      
-      const header = document.querySelector(".navbar");
-      header?.classList.toggle("sticky", window.scrollY > 0);
-    });
-  }, []);
+  const { isScrolled } = useHeaderScroll();
+
+  const navbarClass = isScrolled ? "navbar scrolled" : "navbar";
+
   return (
-    <nav className="navbar">
+    <nav className={navbarClass}>
       <a className="navbar-brand" href="#start">
         <img src={signature} alt="Theo Psallidas" className="signature" />
       </a>

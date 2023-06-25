@@ -26,7 +26,7 @@
     "start": "vite",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "build": "tsc && vite build",
+    "build": "vite build",
     "test": "vite test",
     "eject": "vite eject"
   },

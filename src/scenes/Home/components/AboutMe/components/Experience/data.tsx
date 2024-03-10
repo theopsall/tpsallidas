@@ -1,3 +1,5 @@
+import React from "react";
+
 const experience = [
   {
     title: "Full Stack Software Engineer",
@@ -19,7 +21,7 @@ const experience = [
         human behavior, emotions, and intentions through voice. My work involves
         utilizing ReactJS for dynamic and responsive UI/UX, FastAPI for
         efficient and scalable backend services, and Django for robust web
-        applications. Φ
+        applications.
       </p>
     ),
   },

@@ -1,13 +1,37 @@
 const experience = [
   {
-    title: "Research Associate",
-    organization: "NSCR Demokrtios",
-    location: "Athens, Greece",
-    date: "12/2023 - Present",
+    title: "Full Stack Software Engineer",
+    organization: "Behavioral Signals",
+    location: "Greece",
+    date: "March 2024 - Present",
     description: (
       <p className="text-muted">
-        Research Associate at the Multimedia Analysis Group of the Computational
-        Intelligence Lab (
+        Full Stack Software Engineer at{" "}
+        <a
+          href="https://behavioralsignals.com/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Behavioral Signals
+        </a>
+        , a company specializing in advanced AI-driven voice and emotion
+        recognition technologies. Engaged in developing solutions that analyze
+        human behavior, emotions, and intentions through voice. My work involves
+        utilizing ReactJS for dynamic and responsive UI/UX, FastAPI for
+        efficient and scalable backend services, and Django for robust web
+        applications. Φ
+      </p>
+    ),
+  },
+  {
+    title: "Machine Learning Engineer",
+    organization: "NCSR Demokritos",
+    location: "Ayia Paraskevi, Greece",
+    date: "December 2022 - February 2024",
+    description: (
+      <p className="text-muted">
+        Machine Learning Engineer at the Multimedia Analysis Group of the
+        Computational Intelligence Lab (
         <a
           href="https://labs-repos.iit.demokritos.gr/MagCIL/"
           target="_blank"
@@ -15,31 +39,49 @@ const experience = [
         >
           MagCIL
         </a>
-        ) of the Institute of Informatics and Telecommunications , of the
-        National Center for Scientific Research{" "}
+        ) of the Institute of Informatics and Telecommunications, of the
+        National Center for Scientific Research
         <a href="https://www.demokritos.gr" target="_blank" rel="noreferrer">
           "Demokritos"
+        </a>{" "}
+        for the
+        <a
+          href="https://www.iit.demokritos.gr/projects/automatic-music-monitoring-of-public-performance/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Museek Project
         </a>
-        .
+        . Contributed to the development of a deep learning-based audio
+        fingerprinting system using Faiss, for efficient similarity search and
+        clustering of dense vectors. The solution is optimized for deployment on
+        small IoT devices, enabling efficient music monitoring in public spaces
+        in collaboration with MagCIL and GEA. Focus on Machine & Deep Learning
+        applications on audio data, Music information retrieval, and product
+        application with dockerized ReactJS and FastAPI.
       </p>
     ),
   },
   {
-    title: "Software Developer",
+    title: "Full Stack Software Engineer",
     organization: "Optechain",
-    location: "Athens, Greece",
-    date: "11/2020 - Present",
+    location: "Argyroupoli, Greece",
+    date: "October 2020 - February 2024",
     description: (
       <p className="text-muted">
-        Designing Products with ReactJS, React Native, Angular and Vanilla JS.
+        Software Engineer at Optechain. Worked with front-end technologies like
+        ReactJS, React Native, Angular, and Vanilla JS for the Tizen platform in
+        both JavaScript and TypeScript. Developed and maintained projects which
+        were all dockerized. Backend development was performed using NodeJS and
+        C#, specifically utilizing the ABP framework.
       </p>
     ),
   },
   {
-    title: "Research Associate",
-    organization: "NSCR Demokrtios",
-    location: "Athens, Greece",
-    date: "10/2021 - 07/2022",
+    title: "Machine Learning Engineer",
+    organization: "NCSR Demokritos",
+    location: "Ayia Paraskevi, Greece",
+    date: "August 2021 - July 2022",
     description: (
       <p className="text-muted">
         Member of the{" "}
@@ -50,24 +92,26 @@ const experience = [
         >
           Enorasi Project
         </a>{" "}
-        as Research Associate at the Computetional Intelligence Laboratory of
-        the Institute of Informatics and Telecommunications , of the National
-        Center for Scientific Research{" "}
+        as a Machine Learning Engineer at the Computational Intelligence
+        Laboratory of the Institute of Informatics and Telecommunications, of
+        the National Center for Scientific Research{" "}
         <a href="https://www.demokritos.gr" target="_blank" rel="noreferrer">
           "Demokritos"
         </a>
-        .
+        . Focused on Machine & Deep Learning applications on audiovisual data,
+        specifically in the field of Multimodal Video Summarization from
+        user-generated videos.
       </p>
     ),
   },
   {
-    title: "Research Associate",
-    organization: "NSCR Demokrtios",
-    location: "Athens, Greece",
-    date: "12/2019 - 01/2021",
+    title: "Machine Learning Engineer",
+    organization: "NCSR Demokritos",
+    location: "Ayia Paraskevi, Greece",
+    date: "December 2019 - January 2021",
     description: (
       <p className="text-muted">
-        Research Associate at the Computetional Intelligence Laboratory (
+        Machine Learning Engineer at the Computational Intelligence Lab (
         <a
           href="https://www.iit.demokritos.gr/el/labs/cil"
           target="_blank"
@@ -80,22 +124,7 @@ const experience = [
         <a href="https://www.demokritos.gr" target="_blank" rel="noreferrer">
           "Demokritos"
         </a>
-        .
-      </p>
-    ),
-  },
-  {
-    title: "Web Developer & IT Support",
-    organization: "Greek Army",
-    location: "Athens, Greece",
-    date: "02/2019 - 07/2019",
-    description: (
-      <p className="text-muted">
-        Mandatory Military Service in the General Military Hospital of Athens'
-        Research and Computer Department.
-        <br />
-        Working on IT Services, Web Development (Drupal, Joomla), Network
-        Switching, Python Automate Tools.
+        . Engaged in Machine & Deep Learning applications on audiovisual data.
       </p>
     ),
   },

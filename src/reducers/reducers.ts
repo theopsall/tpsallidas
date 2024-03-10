@@ -5,6 +5,7 @@ import { IState, IAction } from "./store";
 const initState: IState = {
   displayedScreen: Screens.Index,
   repos: [],
+  darkMode:localStorage.getItem("darkMode") === "true" ? true : false,
 };
 
 const reducer = (currentState: IState = initState, action: IAction) => {
@@ -19,7 +20,12 @@ const reducer = (currentState: IState = initState, action: IAction) => {
         ...currentState,
         repos: action.payload,
       };
-
+      case Actions.SetDarkMode:
+        localStorage.setItem("darkMode", action.payload);
+        return {
+          ...currentState,
+          darkMode: action.payload,
+        };
     default:
       return currentState;
   }

@@ -8,6 +8,7 @@ import { GithubModel } from "services/GithubService/dtos/GithubModel";
 export interface IState {
   displayedScreen: string;
   repos: GithubModel[];
+  darkMode: boolean;
 }
 
 export interface IAction {

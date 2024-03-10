@@ -25,7 +25,7 @@ const Header: React.FC = () => {
         <Button type="text" className="nav-link" href="#Contact">
           Contact
         </Button>
-        <ThemeToggle/>
+      <ThemeToggle/>
       </div>
     </nav>
   );

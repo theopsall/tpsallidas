@@ -3,6 +3,7 @@ import React from "react";
 import signature from "../../assets/images/signature_white.svg";
 import { useHeaderScroll } from "./hooks/useHeaderScroll";
 import "./index.css";
+import ThemeToggle from "../ThemeToggle";
 
 const Header: React.FC = () => {
   const { isScrolled } = useHeaderScroll();
@@ -24,6 +25,7 @@ const Header: React.FC = () => {
         <Button type="text" className="nav-link" href="#Contact">
           Contact
         </Button>
+        <ThemeToggle/>
       </div>
     </nav>
   );
